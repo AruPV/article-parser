@@ -7,7 +7,6 @@ dotenv.config();
 const client = new OpenAi()
 
 function stripArticle(article){
-	console.log("stripping article")
 	const articleStart = article.indexOf("<article")
 	const articleEnd = article.indexOf("</article")
 	return article.substring(articleStart, articleEnd)
